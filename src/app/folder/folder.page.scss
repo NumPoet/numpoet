@@ -1,5 +1,12 @@
 ion-menu-button {
   color: var(--ion-color-primary);
+
+}
+
+ion-toolbar {
+  --background-color: transparent;
+  --ion-color-base: transparent !important;
+  
 }
 
 #container {
