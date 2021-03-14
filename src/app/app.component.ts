@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
-      title: 'Inicio',
+      title: 'Home',
       url: '/folder/inicio',
       //icon: 'mail'
       icon: 'heart'
@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
     //  icon: 'warning'
     //}
   ];
-  public labels = ['Art Worker'];
+  public labels = ['Web Apps', 'Mobile Apps', 'Desktop Apps', 'Data Science', 'Artificial Intelligence', 'Digital Marketing', 'DevSecOps'];
 
   constructor(
     private platform: Platform,
