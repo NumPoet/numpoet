@@ -1,31 +1,267 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" >
   <ion-toolbar color="success">
-    <ion-buttons slot="start" >
-      <ion-menu-button ></ion-menu-button>
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
     </ion-buttons>
-   <ion-title color="tertiary">NumPoet</ion-title>
+    <ion-title color="light" size="large">NUMPOET</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content  
-    [scrollEvents]="true"
-    (ionScrollStart)="logScrollStart()"
-    (ionScroll)="logScrolling($event)"
-    (ionScrollEnd)="logScrollEnd()"
-    [fullscreen]="true">
- 
+<ion-content
+  [scrollEvents]="true"
+  (ionScrollStart)="logScrollStart()"
+  (ionScroll)="logScrolling($event)"
+  (ionScrollEnd)="logScrollEnd()"
+  fullscreen="true"
+>
+  <!--
   <div id="container">
     <section>
-<!--
-        <video src="./assets/bg.mp4" class="section-video"  autoplay muted loop ></video>
--->
-      <gl-background-video class="section-video" src="./assets/bg.mp4" mute="true"></gl-background-video>
+
+        <video src="./assets/portfolio/./assets/bg.mp4" class="section-video"  autoplay muted loop ></video>
+
+      <gl-background-video class="section-video" src="./assets/portfolio/./assets/bg.mp4" mute="true"></gl-background-video>
       
       <div class="sphere">
-        <video src="./assets/bg.mp4" class="video"  autoplay muted loop ></video>
+        <video src="./assets/portfolio/./assets/bg.mp4" class="video"  autoplay muted loop ></video>
       </div>
 
       <h2 class="texto-landing">NumPoet</h2>
     </section>
+  </div>
+-->
+
+  <section class="banner" id="home">
+    <div class="imgSidebar">
+      <img src="./assets/numpoet/meu-1.jpg" />
+    </div>
+    <div class="contentBx">
+      <h5 class="logoText">Software Developer/Data scientist/Dev/Sec/Ops</h5>
+      <div>
+        <h4><span>Hello</span>, I'm</h4>
+        <h2>Sergio Negrete Villegas</h2>
+        <h4>Welcome to my personal brand -><strong>NumPoet</strong>.</h4>
+        <p>
+          Digital Transformation as a Service.
+        </p>
+        <a href="#" class="btn">About Me</a>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="https://www.facebook.com/NumPoet/" target="_blank"><img src="./assets/portfolio/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Num_Poet"><img src="./assets/portfolio/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/toch_psi/"><img src="./assets/portfolio/instagram.png" /></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+<!-- 
+  <section class="about" id="about">
+    <div class="title white">
+      <h2>About Us</h2>
+    </div>
+    <div class="content">
+      <div class="textBx">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+          dolor sit amet<br /><br />consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+      </div>
+      <div class="imgBx">
+        <img src="./assets/portfolio/bg1.jpg" />
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="title">
+      <h2>Our Services</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ullam,
+        molestias excepturi earum placeat amet aspernatur pariatur vero aut.
+      </p>
+    </div>
+    <div class="content">
+      <div class="servicesBx">
+        <img src="./assets/portfolio/icon1.png" />
+        <h2>Web Design</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+          fugit voluptas vero, quibusdam neque aspernatur laboriosam.
+        </p>
+      </div>
+      <div class="servicesBx">
+        <img src="./assets/portfolio/icon2.png" />
+        <h2>Web Development</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+          fugit voluptas vero, quibusdam neque aspernatur laboriosam.
+        </p>
+      </div>
+      <div class="servicesBx">
+        <img src="./assets/portfolio/icon3.png" />
+        <h2>Android Apps</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+          fugit voluptas vero, quibusdam neque aspernatur laboriosam.
+        </p>
+      </div>
+      <div class="servicesBx">
+        <img src="./assets/portfolio/icon4.png" />
+        <h2>Photography</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+          fugit voluptas vero, quibusdam neque aspernatur laboriosam.
+        </p>
+      </div>
+      <div class="servicesBx">
+        <img src="./assets/portfolio/icon5.png" />
+        <h2>Content Writing</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+          fugit voluptas vero, quibusdam neque aspernatur laboriosam.
+        </p>
+      </div>
+      <div class="servicesBx">
+        <img src="./assets/portfolio/icon6.png" />
+        <h2>Video Editing</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+          fugit voluptas vero, quibusdam neque aspernatur laboriosam.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="title">
+      <h2>Recent Work</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ullam,
+        molestias excepturi earum placeat amet aspernatur pariatur vero aut.
+      </p>
+    </div>
+    <div class="content">
+      <div class="workBx">
+        <div class="imgBx">
+          <img src="./assets/portfolio/img1.jpg" />
+        </div>
+        <div class="textBx">
+          <h3>Project 01</h3>
+        </div>
+      </div>
+      <div class="workBx">
+        <div class="imgBx">
+          <img src="./assets/portfolio/img2.jpg" />
+        </div>
+        <div class="textBx">
+          <h3>Project 02</h3>
+        </div>
+      </div>
+      <div class="workBx">
+        <div class="imgBx">
+          <img src="./assets/portfolio/img3.jpg" />
+        </div>
+        <div class="textBx">
+          <h3>Project 03</h3>
+        </div>
+      </div>
+      <div class="workBx">
+        <div class="imgBx">
+          <img src="./assets/portfolio/img4.jpg" />
+        </div>
+        <div class="textBx">
+          <h3>Project 04</h3>
+        </div>
+      </div>
+      <div class="workBx">
+        <div class="imgBx">
+          <img src="./assets/portfolio/img5.jpg" />
+        </div>
+        <div class="textBx">
+          <h3>Project 05</h3>
+        </div>
+      </div>
+      <div class="workBx">
+        <div class="imgBx">
+          <img src="./assets/portfolio/img6.jpg" />
+        </div>
+        <div class="textBx">
+          <h3>Project 06</h3>
+        </div>
+      </div>
+      <div class="workBx">
+        <div class="imgBx">
+          <img src="./assets/portfolio/img7.jpg" />
+        </div>
+        <div class="textBx">
+          <h3>Project 07</h3>
+        </div>
+      </div>
+      <div class="workBx">
+        <div class="imgBx">
+          <img src="./assets/portfolio/img8.jpg" />
+        </div>
+        <div class="textBx">
+          <h3>Project 08</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="title white">
+      <h2>Contact Us</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ullam,
+        molestias excepturi earum placeat amet aspernatur pariatur vero aut.
+      </p>
+    </div>
+    <div class="contactForm">
+      <div class="row">
+        <div class="col50">
+          <input type="text" name="" placeholder="First Name" />
+        </div>
+        <div class="col50">
+          <input type="text" name="" placeholder="Last Name" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col50">
+          <input type="text" name="" placeholder="Email" />
+        </div>
+        <div class="col50">
+          <input type="text" name="" placeholder="Mobile No." />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col100">
+          <textarea placeholder="Message"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col100">
+          <input type="submit" value="Send" />
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <div class="copyright">
+    <p>Copyright © 2021 NumPoet. All Right Reserved.</p>
   </div>
 </ion-content>

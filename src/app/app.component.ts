@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
     //  icon: 'warning'
     //}
   ];
-  public labels = ['Art Worker'];
+  public labels = ['Web Apps', 'Mobile Apps', 'Desktop Apps', 'Data Science', 'Artificial Intelligence', 'Digital Marketing', 'DevSecOps'];
 
   constructor(
     private platform: Platform,
